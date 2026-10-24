@@ -3,9 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment -4</title>
+    <!-- tailwind and daisyui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Geist", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="bg-[#F8FAFC]">
+    <!-- header -->
+    <section class="w-5/6 mx-auto pt-15">
+        <h2 class="text-3xl font-bold mb-2.5">Job Application Tracker</h2>
+        <div class="job-cont grid grid-cols-3 gap-5 border-b-2 border-[#E6E7E9] pb-7.5">
+            <div class="total bg-white p-5 rounded-lg">
+                <p>Total</p>
+                <h3><span class=" text-2xl font-bold ">8</span></h3>
+            </div>
+            <div class="total bg-white p-5 rounded-lg">
+                <p>Interview</p>
+                <h3><span class=" text-2xl font-bold text-green-500">0</span></h3>
+            </div>
+            <div class="total bg-white p-5 rounded-lg">
+                <p>Total</p>
+                <h3><span class=" text-2xl font-bold text-red-500">0</span></h3>
+            </div>
+        </div>
+        <div class="jobs flex justify-between mt-7.5">
+            <h1 class="font-bold text-2xl">Available Jobs</h1>
+            <div class="text-[#64748B] text-sm">8</div>
+        </div>
+        <div class=" my-6 space-x-2">
+            <button class="btn bg-base hover:bg-blue-500 hover:text-white">All</button>
+            <button class="btn bg-base hover:bg-blue-500 hover:text-white">INTERVIEW</button>
+            <button class="btn bg-base hover:bg-blue-500 hover:text-white">Rejected</button>
+        </div>
+    </section>
+    <!-- Jobs -->
+    <section class="w-5/6 mx-auto ">
+        <div class="space-y-5 bg-base-100 p-6 rounded-lg mb-4">
+            <div class="job-title">
+                <h1 class="text-xl font-bold">Mobile First Crop</h1>
+                <p class="text-[#64748B]">React Native Developer</p>
+            </div>
+            <p class="text-sm text-[#64748B]">Remote • Full-time • $130,000 - $175,000</p>
+
+            <p class="bg-[#EEF4FF] py-2 px-3 inline">NOT APPLIED</p>
+            <p class="mt-4">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+            <div class="space-x-2">
+                <button class="btn text-green-500 broder border-dotted border-green-500 hover:bg-green-500 hover:text-white">INTERVIEW</button>
+                <button class="btn text-red-500 broder border-dotted border-red-500 hover:bg-red-500 hover:text-white">REJECTED</button>
+            </div>
+        </div>
+        <div class="space-y-5 bg-base-100 p-6 rounded-lg mb-4">
+            <div class="job-title">
+                <h1 class="text-xl font-bold">Mobile First Crop</h1>
+                <p class="text-[#64748B]">React Native Developer</p>
+            </div>
+            <p class="text-sm text-[#64748B]">Remote • Full-time • $130,000 - $175,000</p>
+
+            <p class="bg-[#EEF4FF] py-2 px-3 inline">NOT APPLIED</p>
+            <p class="mt-4">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+            <div class="space-x-2">
+                <button class="btn text-green-500 broder border-dotted border-green-500 focus:bg-green-500 hover:text-white">INTERVIEW</button>
+                <button class="btn text-red-500 broder border-dotted border-red-500 hover:bg-red-500 hover:text-white">REJECTED</button>
+            </div>
+        </div>
+        <div class="space-y-5 bg-base-100 p-6 rounded-lg mb-4">
+            <div class="job-title">
+                <h1 class="text-xl font-bold">Mobile First Crop</h1>
+                <p class="text-[#64748B]">React Native Developer</p>
+            </div>
+            <p class="text-sm text-[#64748B]">Remote • Full-time • $130,000 - $175,000</p>
+
+            <p class="bg-[#EEF4FF] py-2 px-3 inline">NOT APPLIED</p>
+            <p class="mt-4">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+            <div class="space-x-2">
+                <button class="btn text-green-500 broder border-dotted border-green-500 hover:bg-green-500 hover:text-white">INTERVIEW</button>
+                <button class="btn text-red-500 broder border-dotted border-red-500 hover:bg-red-500 hover:text-white">REJECTED</button>
+            </div>
+        </div>
+        <div class="space-y-5 bg-base-100 p-6 rounded-lg mb-4">
+            <div class="job-title">
+                <h1 class="text-xl font-bold">Mobile First Crop</h1>
+                <p class="text-[#64748B]">React Native Developer</p>
+            </div>
+            <p class="text-sm text-[#64748B]">Remote • Full-time • $130,000 - $175,000</p>
+
+            <p class="bg-[#EEF4FF] py-2 px-3 inline">NOT APPLIED</p>
+            <p class="mt-4">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+            <div class="space-x-2">
+                <button class="btn text-green-500 broder border-dotted border-green-500 hover:bg-green-500 hover:text-white">INTERVIEW</button>
+                <button class="btn text-red-500 broder border-dotted border-red-500 hover:bg-red-500 hover:text-white">REJECTED</button>
+            </div>
+        </div>
+        <div class="space-y-5 bg-base-100 p-6 rounded-lg mb-4">
+            <div class="job-title">
+                <h1 class="text-xl font-bold">Mobile First Crop</h1>
+                <p class="text-[#64748B]">React Native Developer</p>
+            </div>
+            <p class="text-sm text-[#64748B]">Remote • Full-time • $130,000 - $175,000</p>
+
+            <p class="bg-[#EEF4FF] py-2 px-3 inline">NOT APPLIED</p>
+            <p class="mt-4">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+            <div class="space-x-2">
+                <button class="btn text-green-500 broder border-dotted border-green-500 hover:bg-green-500 hover:text-white">INTERVIEW</button>
+                <button class="btn text-red-500 broder border-dotted border-red-500 hover:bg-red-500 hover:text-white">REJECTED</button>
+            </div>
+        </div>
+        <div class="space-y-5 bg-base-100 p-6 rounded-lg mb-4">
+            <div class="job-title">
+                <h1 class="text-xl font-bold">Mobile First Crop</h1>
+                <p class="text-[#64748B]">React Native Developer</p>
+            </div>
+            <p class="text-sm text-[#64748B]">Remote • Full-time • $130,000 - $175,000</p>
+
+            <p class="bg-[#EEF4FF] py-2 px-3 inline">NOT APPLIED</p>
+            <p class="mt-4">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+            <div class="space-x-2">
+                <button class="btn text-green-500 broder border-dotted border-green-500 hover:bg-green-500 hover:text-white">INTERVIEW</button>
+                <button class="btn text-red-500 broder border-dotted border-red-500 hover:bg-red-500 hover:text-white">REJECTED</button>
+            </div>
+        </div>
+        <div class="space-y-5 bg-base-100 p-6 rounded-lg mb-4">
+            <div class="job-title">
+                <h1 class="text-xl font-bold">Mobile First Crop</h1>
+                <p class="text-[#64748B]">React Native Developer</p>
+            </div>
+            <p class="text-sm text-[#64748B]">Remote • Full-time • $130,000 - $175,000</p>
+
+            <p class="bg-[#EEF4FF] py-2 px-3 inline">NOT APPLIED</p>
+            <p class="mt-4">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+            <div class="space-x-2">
+                <button class="btn text-green-500 broder border-dotted border-green-500 hover:bg-green-500 hover:text-white">INTERVIEW</button>
+                <button class="btn text-red-500 broder border-dotted border-red-500 hover:bg-red-500 hover:text-white">REJECTED</button>
+            </div>
+        </div>
+        <div class="space-y-5 bg-base-100 p-6 rounded-lg mb-4">
+            <div class="job-title">
+                <h1 class="text-xl font-bold">Mobile First Crop</h1>
+                <p class="text-[#64748B]">React Native Developer</p>
+            </div>
+            <p class="text-sm text-[#64748B]">Remote • Full-time • $130,000 - $175,000</p>
+
+            <p class="bg-[#EEF4FF] py-2 px-3 inline">NOT APPLIED</p>
+            <p class="mt-4">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+            <div class="space-x-2">
+                <button class="btn text-green-500 broder border-dotted border-green-500 hover:bg-green-500 hover:text-white">INTERVIEW</button>
+                <button class="btn text-red-500 broder border-dotted border-red-500 hover:bg-red-500 hover:text-white">REJECTED</button>
+            </div>
+        </div>
+    </section>
+    <!-- Interviewed -->
+     <section class="w-5/6 mx-auto">
+         <div class="jobs flex justify-between mt-7.5">
+            <h1 class="font-bold text-2xl">Available Jobs</h1>
+            <div class="text-[#64748B] text-sm">8</div>
+        </div>
+        <div class=" my-6 space-x-2">
+            <button class="btn bg-base hover:bg-blue-500 hover:text-white">All</button>
+            <button class="btn bg-base hover:bg-blue-500 hover:text-white">INTERVIEW</button>
+            <button class="btn bg-base hover:bg-blue-500 hover:text-white">Rejected</button>
+        </div>
+        <div class="bg-white text-center items-center">
+            <img src="jobs.png" alt="">
+        </div>
+        <h2 class="text-2xl font-bold">No jobs available</h2>
+        <p class=" text-[#64748B]">Check back soon for new job opportunities</p>
+     </section>
 </body>
 </html>
