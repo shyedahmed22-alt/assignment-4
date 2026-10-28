@@ -32,16 +32,50 @@ document.querySelectorAll(".all-rej").forEach(element => {
 
 // status update
 
-document.querySelectorAll(".inter").forEach(element => {
-  element.addEventListener("click", function() {
-    const cards = document.querySelectorAll(".job-card")
-    for (const card of cards ){
-      console.log(card)
+function updateCounters() {
+  let interCount = 0;
+  let rejCount = 0;
+
+  document.querySelectorAll(".job-card").forEach(card => {
+    const stats = card.querySelector(".stats");
+
+    if (!stats) return;
+
+    if (stats.innerText === "Interviewed") {
+      interCount++;
+    } else if (stats.innerText === "Rejected") {
+      rejCount++;
     }
   });
-});
 
-document.querySelectorAll(".rej").forEach(element => {
-  element.addEventListener("click", function() {
+  document.getElementById("total-interview").innerText = interCount;
+  document.getElementById("total-rejected").innerText = rejCount;
+}
+document.querySelectorAll(".all-jobs").forEach(button => {
+  button.addEventListener("click", function() {
+
+    document.querySelectorAll(".job-card").forEach(card => {
+      card.classList.remove("hidden");
+    });
+
   });
+});
+document.getElementById("jobs").addEventListener("click", function(event) {
+  const btn = event.target.closest(".inter, .rej");
+
+  if (!btn) return;
+
+  const card = btn.closest(".job-card");
+  const status = card.querySelector(".stats");
+
+  if (btn.classList.contains("inter")) {
+    status.innerText = "Interviewed";
+    status.className = "stats border border-green-500 text-green-500 inline-block px-2 py-1 font-bold bg-green-100 m-0";
+  } else {
+    status.innerText = "Rejected";
+    status.className = "stats border border-red-500 text-red-500 inline-block px-2 py-1 font-bold bg-red-100 m-0";
+  }
+
+  updateCounters();
+  applyFilter();
 });
